@@ -48,7 +48,7 @@ variable "associate_public_ip_address" {
                
                 sudo systemctl restart nginx
                 # Create a sample index.html file
-                echo "Terraform project From Private ec2<br><br>created By: Aya Omar<br><br>The HostName: $(hostname) " | sudo tee /var/www/html/index.html
+                echo "Terraform project From Private ec2<br><br>created By:yasmin mohamed <br><br>The HostName: $(hostname) " | sudo tee /var/www/html/index.html
                 EOF
 }
   
@@ -65,6 +65,6 @@ variable "associate_public_ip_address" {
 #                 sudo apt install -y apache2
 #                 sudo systemctl start apache2
 #                 sudo systemctl enable apache2
-#                 echo "Terraform project From Private ec2<br><br>created By: Aya Omar<br><br>The HostName: $(hostname) " | sudo tee /var/www/html/index.html
+#                 echo "Terraform project From Private ec2<br><br>created By:yasmin mohamed <br><br>The HostName: $(hostname) " | sudo tee /var/www/html/index.html
 #                 EOF
 #                 }

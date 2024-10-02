@@ -48,7 +48,7 @@ variable "alb_dns_name"{
                
                 sudo systemctl restart nginx
                 # Create a sample index.html file
-                echo "Terraform project From Private ec2<br><br>created By: Aya Omar<br><br>The HostName: $(hostname) " | sudo tee /var/www/html/index.html
+                echo "Terraform project From Private ec2<br><br>created By:yasmin mohamed <br><br>The HostName: $(hostname) " | sudo tee /var/www/html/index.html
                 EOF
 }
   

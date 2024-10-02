@@ -111,20 +111,20 @@ module "public_ec2" {
   instance_type               = var.instance_type
   subnet_id                   = [module.public_subnet_1.subnet_id, module.public_subnet_2.subnet_id]
   sg_id                       = module.sg.sg_id
-  key_name                    = "ayakey"
+  key_name                    = var.key_name
   ec2_name                    = ["Public instance 1", "Public instance 2"]
   # depends_on                  = [module.public_subnet_1, module.public_subnet_2, module.sg,module.Public_Load_Balancer]
 }
 #########################3 private ec2#########################################
 module "private_ec2" {
-  source                      = "./module/private_ec2 "
+  source                      = "./module/private_ec2"
   ec2_count                   = 2
   ami_id                      = var.ami_id
   associate_public_ip_address = false
   instance_type               = var.instance_type
   subnet_id                   = [module.private_subnet_1.subnet_id, module.private_subnet_2.subnet_id]
   sg_id                       = module.sg.sg_id
-  key_name                    = "ayakey"
+  key_name                    = var.key_name
 
 
   ec2_name = ["Private  instance 1", "Private instance 2"]

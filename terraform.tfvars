@@ -5,6 +5,6 @@ private_subnet_cider = ["10.0.2.0/24", "10.0.4.0/24"]
 private_subnet_name  = ["Private subnet 1", "Private subnet 2"]
 public_subnet_name   = ["Public subnet 1", "Public subnet 2"]
 sg_ports             = [22, 80]
-key_name             = "TF_key"
+key_name             = "yasmin_key"
 instance_type        = "t2.micro"
 ami_id               = "ami-0e86e20dae9224db8"
